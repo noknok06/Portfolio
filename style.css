@@ -1,0 +1,80 @@
+pre {
+    color: rgb(184, 133, 133);
+}
+
+
+/* 1index.html */
+
+.header {
+    height: 80px;
+    width: auto;
+}
+
+.header_title {
+    float: left;
+    padding: 20px 40px;
+}
+
+.header_list {
+    display: inline-block;
+    padding: 20px 40px;
+}
+
+.header_list_item {
+    display: inline;
+    padding-left: 20px;
+}
+
+.image_wrapper {
+    position: relative;
+}
+
+.image_wrapper img {
+    height: 750px;
+    width: 100vw;
+}
+
+.image_wrapper p {
+    color: white;
+    font-size: 70px;
+    left: 100px;
+    margin: 0;
+    position: absolute;
+    padding: 0;
+    top: 200px;
+}
+
+.main {
+    padding: 0 50px;
+}
+
+.profile_title,
+.skill_title {
+    padding: 30px 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+.profile_contents {
+    padding-bottom: 50px;
+    display: flex;
+    font-family: arial;
+    font-size: 20px;
+    justify-content: center;
+}
+
+.profile_title,
+.skill_title {
+    font-size: 50px;
+}
+
+.profile_image {
+    float: left;
+    padding-right: 80px;
+}
+
+.profile_explain {
+    padding: 0;
+    white-space: pre-line;
+    /* width: 80vw; */
+}
