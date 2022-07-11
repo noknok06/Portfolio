@@ -22,11 +22,16 @@ table {
     width: auto;
     /* background-color: #174a5c; */
     color: rgb(58, 56, 56);
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
 }
 
 .header_title {
     float: left;
     padding: 20px 40px;
+    margin-left: 20px;
 }
 
 .header_list {
@@ -65,6 +70,7 @@ table {
 }
 
 .main {
+    margin-top: 24px;
     padding: 0 50px;
 }
 
