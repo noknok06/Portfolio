@@ -1,311 +1,263 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-    <head>
+<head>
 
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1,
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
-        <title>Naoki's Portfolio</title>
+    <title>Naoki's Portfolio</title>
 
-        <link rel="stylesheet" href="style.css">
-        <!-- BootstrapのCSS読み込み -->
-        <link rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-            crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    </head>
+</head>
 
-    <body>
-        <div class="header">
+<body>
+    <div class="header">
+        <div class="header_title">
+            <h5>Naoki's Portfolio</h5>
+        </div>
+        <div class="header_list list-group " id="list-header">
+            <ul>
+                <li class="header_list_item"><a href="#list-item-profile">PROFILE</a></li>
+                <li class="header_list_item"><a href="#list-item-career">CAREER</a></li>
+                <li class="header_list_item"><a href="#list-item-skill">SKILL</a></li>
+                <li class="header_list_item"><a href="#list-item-works">WORKS</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="image_wrapper d-none d-md-block">
+        <img src="image/header_image.jpg" alt="image">
+        <p>Naoki's Portfolio</p>
+    </div>
 
-            <div class="header_title">
-                <h5>Naoki's Portfolio</h5>
+    <div class="main col-xs-12 col-md-12 col-lg-12">
+        <div data-bs-spy="scroll" data-bs-target="#list-header" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+            <div class="profile">
+                <p class="profile_title" id="list-item-profile">PROFILE</p>
+                <div class="profile_contents">
+                    <img class="profile_image d-none d-md-block" src="image/profile_image.png">
+                    <pre class="profile_explain">
+                        初めまして。naokiと申します。現在31歳です。
+                        新卒で独立系SIer職に就き、４年目から中規模の専門商社へ転職しました。
+                        プログラムを組むことも好きですが、最近では現場の意見を聞きながら
+                        業務改善することにやりがいを感じています。
+                        新しい仕組みで便利になっていくのって楽しいですね！
+                    </pre>
+                </div>
             </div>
-            <div class="header_list list-group" id="list-header">
-                <ul>
-                    <li class="header_list_item"><a href="#list-item-profile" style="color: black;">PLOFILE</a></li>
-                    <li class="header_list_item"><a href="#list-item-career">CAREER</a></li>
-                    <li class="header_list_item"><a href="#list-item-skill">SKILL</a></li>
-                    <li class="header_list_item"><a href="#list-item-works">WORKS</a></li>
+            <div class="career">
+                <p class="career_title" id="list-item-career">CAREER</p>
+                <ul class="timeline">
+                    <li>
+                        <p class="timeline-date">2014年4月</p>
+                        <div class="timeline-content">
+                            <h3>独立系SIer企業に就職</h3>
+                            <p>2014. 7～2014.10 医療系アプリケーションにおけるテストを経験</p>
+                            <p>2014.11～2015.11 官公庁向け防衛システムの詳細設計・開発(VC++)・テストを経験</p>
+                            <p>2015.12～2017. 1 船舶ナビゲーションシステムの開発(VC++)・テストを経験</p>
+                            <p>2017. 2～2017. 7 鉄道会社向け監視システムのテストを経験</p>
+                        </div>
+                    </li>
+                    <li>
+                        <p class="timeline-date">2017年9月</p>
+                        <div class="timeline-content">
+                            <h3>食品業専門商社の社内SEに転職</h3>
+                            <p>基幹システムの刷新を経験。ローコードツールの開発手法を取得</p>
+                            <p>RPAによる業務自動化で受注業務をサポート</p>
+                        </div>
+                    </li>
                 </ul>
             </div>
-        </div>
-        <div class="image_wrapper">
-            <img src="image/header_image.jpg" alt="image">
-            <p>Naoki's Portfolio</p>
-        </div>
-
-        <div class="main">
-            <div
-                data-bs-spy="scroll"
-                data-bs-target="#list-header"
-                data-bs-offset="0"
-                class="scrollspy-example"
-                tabindex="0">
-                <div class="profile">
-                    <p class="profile_title" id="list-item-profile">PLOFILE</p>
-                    <div class="profile_contents">
-                        <img class="profile_image"
-                            src="image/profile_image.png">
-                        <pre class="profile_explain">
-                        初めまして。なおきと申します。現在31歳です。
-                        新卒で独立系SIer職に就き、一部機能の詳細設計から
-                        開発・テストまで経験しました。
-                        ４年目から中規模の専門商社へ転職し、RPAやローコードツールを
-                        用いて業務改善に取り組んでいます。
-                        システムだけでなく、受発注業務への理解もあります。
-                        日々より良い仕事の取り組み方を模索しています。
-                    </pre>
-                    </div>
-                </div>
-                <div class="career">
-                    <p class="career_title" id="list-item-career">CAREER</p>
-                    <ul class="timeline">
-                        <li>
-                            <p class="timeline-date">2014年4月</p>
-                            <div class="timeline-content">
-                                <h3>独立系SIer企業に就職</h3>
-                                <p>医療系アプリケーションにおけるテストを経験</p>
-                                <p>官公庁向け防衛システムの詳細設計・開発(VC++)・テストを経験</p>
-                                <p>船舶ナビゲーションシステムの開発(VC++)・テストを経験</p>
-                                <p>鉄道会社向け監視システムのテストを経験</p>
-                            </div>
-                        </li>
-                        <li>
-                            <p class="timeline-date">2017年9月</p>
-                            <div class="timeline-content">
-                                <h3>食品業専門商社の社内SEに転職</h3>
-                                <p>基幹システムの刷新を経験。ローコードツールの開発手法を取得</p>
-                                <p>RPAによる業務自動化で受注業務をサポート</p>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="skill">
-                    <p class="skill_title" id="list-item-skill">SKILL</p>
-                    <div class="skill_cards">
-                        <div class="row row-cols-1 row-cols-md-2 g-4">
-                            <div class="col">
-                                <div class="card skill_card">
-                                    <div class="card-header">フロントエンド</div>
+            <div class="skill">
+                <p class="skill_title" id="list-item-skill">SKILL</p>
+                <div class="skill_cards">
+                    <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                            <div class="card skill_card">
+                                <div class="card-header">フロントエンド</div>
+                                <div class="card-body">
                                     <div class="card-body">
-                                        <div class="card-body">
-                                            <h5 class="card-title">静的な部分は一通りできます。</h5>
-                                            <table class="card-text table">
-                                                <thead>
-                                                    <tr>
-                                                        <th scope="col">技術</th>
-                                                        <th scope="col">経験年数</th>
-                                                        <th scope="col">スキル</th>
-                                                    </tr>
-                                                </thead>
-                                                <tbody>
-                                                    <tr>
-                                                        <td>HTML</td>
-                                                        <td>２年</td>
-                                                        <td>★★★</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>CSS</td>
-                                                        <td>２年</td>
-                                                        <td>★★★</td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>jQuery</td>
-                                                        <td>０.５年</td>
-                                                        <td>★</td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                        </div>
+                                        <h5 class="card-title">静的な部分は一通りできます。</h5>
+                                        <table class="card-text table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">技術</th>
+                                                    <th scope="col">経験年数</th>
+                                                    <th scope="col">スキル</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>HTML</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>CSS</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>jQuery</td>
+                                                    <td>０.５年</td>
+                                                    <td>★</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card skill_card">
-                                    <div class="card-header">バックエンド</div>
+                        </div>
+                        <div class="col">
+                            <div class="card skill_card">
+                                <div class="card-header">バックエンド</div>
+                                <div class="card-body">
                                     <div class="card-body">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Webアプリの構築からGUIとしての活用まで行えます。</h5>
-                                            <p class="card-text">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">技術</th>
-                                                            <th scope="col">経験年数</th>
-                                                            <th scope="col">スキル</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Python</td>
-                                                            <td>３年</td>
-                                                            <td>★★★★</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>VC++</td>
-                                                            <td>２年</td>
-                                                            <td>★★</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </p>
-                                        </div>
+                                        <h5 class="card-title">Webアプリの構築からGUIとしての活用まで行えます。</h5>
+                                        <table class="card-text table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">技術</th>
+                                                    <th scope="col">経験年数</th>
+                                                    <th scope="col">スキル</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Python</td>
+                                                    <td>３年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>VC++</td>
+                                                    <td>２年</td>
+                                                    <td>★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GAS</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card skill_card">
-                                    <div class="card-header">フレームワーク</div>
+                        </div>
+                        <div class="col">
+                            <div class="card skill_card">
+                                <div class="card-header">DB</div>
+                                <div class="card-body">
                                     <div class="card-body">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Web開発などで利用したことのあるFWです。</h5>
-                                            <p class="card-text">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">技術</th>
-                                                            <th scope="col">経験年数</th>
-                                                            <th scope="col">スキル</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>Django</td>
-                                                            <td>２年</td>
-                                                            <td>★★★★</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>Bootstrap</td>
-                                                            <td>２年</td>
-                                                            <td>★★★</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </p>
-                                        </div>
+                                        <h5 class="card-title">前職で開発・現職で運用を経験しました。</h5>
+                                        <table class="card-text table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">技術</th>
+                                                    <th scope="col">経験年数</th>
+                                                    <th scope="col">スキル</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Oracle</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Mysql</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>PostgreSQL</td>
+                                                    <td>１年</td>
+                                                    <td>★</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col">
-                                <div class="card skill_card">
-                                    <div class="card-header">その他</div>
+                        </div>
+                        <div class="col">
+                            <div class="card skill_card">
+                                <div class="card-header">フレームワーク</div>
+                                <div class="card-body">
                                     <div class="card-body">
-                                        <div class="card-body">
-                                            <h5 class="card-title">業務を通じて活用しています。</h5>
-                                            <p class="card-text">
-                                                <table class="table">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">技術</th>
-                                                            <th scope="col">経験年数</th>
-                                                            <th scope="col">スキル</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <td>WinActor</td>
-                                                            <td>４年</td>
-                                                            <td>★★★★★</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <td>VBA/VBS</td>
-                                                            <td>５年</td>
-                                                            <td>★★★★★</td>
-                                                        </tr>
-                                                    </tbody>
-                                                </table>
-                                            </p>
-                                        </div>
+                                        <h5 class="card-title">Web開発などで利用したことのあるFWです。</h5>
+                                        <table class="card-text table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">技術</th>
+                                                    <th scope="col">経験年数</th>
+                                                    <th scope="col">スキル</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Django</td>
+                                                    <td>２年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Bootstrap</td>
+                                                    <td>２年</td>
+                                                    <td>★★★</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="works">
-                    <p class="works_title" id="list-item-works">WORKS</p>
-                    <div class="works_cards">
-
-                        <div class="row row-cols-1 row-cols-md-3 g-4">
-                            <div class="col">
-                                <div class="card work_card">
-                                    <img src="image/work_robot.jpeg"
-                                        class="card-img-top" alt="..."
-                                        style="width:
-                                        120px;">
+                    <div class="row row-cols-md-1 g-4">
+                        <div class="col">
+                            <div class="card skill_card">
+                                <div class="card-header">その他</div>
+                                <div class="card-body">
                                     <div class="card-body">
-                                        <h5 class="card-title">RPAによる業務自動化</h5>
-                                        <p class="card-text">
-                                            受発注業務や商品登録作業等、規則性のある業務の自動化を実施しました。
-                                            自動処理の監視ツールも自作で用意しています。
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go
-                                            somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card work_card">
-                                    <img src="image/work_filemaker.png"
-                                        class="card-img-top" alt="..."
-                                        style="width:
-                                        50%;">
-                                    <div class="card-body">
-                                        <h5 class="card-title">基幹システムの刷新</h5>
-                                        <p class="card-text">
-                                            パッケージを購入したのですが、機能不足により
-                                            ローコードツール（FileMaker）を使用し機能を追加開発しました。
-                                        </p>
-                                        <a href="#" class="btn btn-primary">Go
-                                            somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card work_card">
-                                    <img src="image/work_faq.png"
-                                        id="image_robot"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">FAQサイト作成</h5>
-                                        <p class="card-text">
-                                            業務に対する質問管理のために作成しました。
-                                            パソコンをWEBサーバーに見立てて運用しています。
-                                        </p>
-                                        <a
-                                            href="https://naoki0618.pythonanywhere.com/myapp/"
-                                            class="btn btn-primary">Go somewhere</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card work_card">
-                                    <img src="image/vendor_image.jpg"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">ベンダー選定・コントロール</h5>
-                                        <p class="card-text">
-                                            基幹システムの刷新プロジェクトや保守、
-                                            各社内アプリケーションの導入・運用にて
-                                            常に複数ベンダーの作業調整・確認を行っています。
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card work_card">
-                                    <img src="image/work_work.png"
-                                        class="card-img-top" alt="...">
-                                    <div class="card-body">
-                                        <h5 class="card-title">社内ツール管理</h5>
-                                        <p class="card-text">
-                                            クラウドのファイルサーバーやGoogle WorkSpace,
-                                            ウィルス対策ソフトなど、様々なツールの管理・運用の経験があります。
-                                        </p>
+                                        <h5 class="card-title">業務で活用しています。</h5>
+                                        <table class="card-text table">
+                                            <thead>
+                                                <tr>
+                                                    <th scope="col">技術</th>
+                                                    <th scope="col">経験年数</th>
+                                                    <th scope="col">スキル</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>WinActor</td>
+                                                    <td>４年</td>
+                                                    <td>★★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Office365</td>
+                                                    <td>8年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>GWS</td>
+                                                    <td>５年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Slack</td>
+                                                    <td>２年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>ZOOM</td>
+                                                    <td>２年</td>
+                                                    <td>★★★★</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
                                     </div>
                                 </div>
                             </div>
@@ -315,22 +267,148 @@
             </div>
         </div>
 
+        <div class="works">
+            <p class="works_title" id="list-item-works">WORKS</p>
+            <div class="works_cards">
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/work_robot.jpeg" class="card-img-top" alt="..." style="width:
+                                        120px;">
+                            <div class="card-body">
+                                <h5 class="card-title">RPAによる業務自動化</h5>
+                                <p class="card-text">
+                                    受発注業務等、規則性のある業務の自動化を実施しました。 WinActor/VBA•VBS/Python
+                                </p>
+                                <!-- Modal Trigger -->
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">
+                                        Sample Image
+                                    </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="label1">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Modal body
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/work_filemaker.png" class="card-img-top" alt="..." style="width:
+                                        35%;">
+                            <div class="card-body">
+                                <h5 class="card-title">基幹システムの更新</h5>
+                                <p class="card-text">
+                                    ベンダー開発後、不足機能を自社開発しました。 FileMaker/AWS/oracleRDS
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/work_faq.png" id="image_robot" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">FAQサイト作成</h5>
+                                <p class="card-text">
+                                    業務に対する質問管理のために作成しました。 HTML/CSS/Bootstrap/Python/
+                                    <a href="https://github.com/Naoki0618/Sample_Django.git">github</a>
+                                </p>
+                                <a href="https://naoki0618.pythonanywhere.com/myapp/" class="btn btn-secondary">Sample Page</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/vendor_image.jpg" class="card-img-top" alt="..." style="width: 60%">
+                            <div class="card-body">
+                                <h5 class="card-title">ベンダー選定・コントロール</h5>
+                                <p class="card-text">
+                                    基幹システムの刷新プロジェクトや保守、 各社内アプリケーションの導入・運用にて 常に複数ベンダーの作業調整・確認を行っています。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/work_work.png" class="card-img-top" alt="..." style="width: 50%;">
+                            <div class="card-body">
+                                <h5 class="card-title">社内ツール管理</h5>
+                                <p class="card-text">
+                                    クラウドのファイルサーバーやGoogle WorkSpace, ウィルス対策ソフトなど、様々なツールの管理・運用の経験があります。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card work_card">
+                            <img src="image/work_work.png" class="card-img-top" alt="..." style="width: 50%;">
+                            <div class="card-body">
+                                <h5 class="card-title">Bot</h5>
+                                <p class="card-text">
+                                    メモ的なものを記憶させておく私のパートナーです。<br> GAS/Google Chat
+                                </p>
+                                <!-- Modal Trigger -->
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">
+                                        Sample Image
+                                    </button>
+                                <!-- Modal -->
+                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="label1">Modal title</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                              </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Modal body
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">OK</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <ul class="footer-menu">
+            <li><a href="#list-item-profile">PROFILE</a> ｜</li>
+            <li><a href="#list-item-career">CAREER</a> ｜</li>
+            <li><a href="#list-item-skill">SKILL</a> ｜</li>
+            <li><a href="#list-item-works">WORKS</a> </li>
+        </ul>
+    </div>
 
 
-        <!-- jQuery読み込み -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
-        <!-- Propper.js読み込み -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
-        <!-- BootstrapのJavascript読み込み -->
-        <script
-            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
-    </body>
+    <!-- jQuery読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- Propper.js読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <!-- BootstrapのJavascript読み込み -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
 
 </html>
