@@ -6,12 +6,33 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1,
             shrink-to-fit=no">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>        
     <title>Naoki's Portfolio</title>
 
     <link rel="stylesheet" href="style.css">
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <script>
+        $(function ($) {
+            $('#list_item_profile').on('click',function(){
+                const positionTop = $('#list-item-profile').offset().top;
+                $("html").animate({scrollTop: positionTop});
+            });
+            $('#list_item_career').on('click',function(){
+                const positionTop = $('#list-item-career').offset().top;
+                $("html").animate({scrollTop: positionTop});
+            });
+            $('#list_item_skill').on('click',function(){
+                const positionTop = $('#list-item-skill').offset().top;
+                $("html").animate({scrollTop: positionTop});
+            });
+            $('#list_item_works').on('click',function(){
+                const positionTop = $('#list-item-works').offset().top;
+                $("html").animate({scrollTop: positionTop});
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -21,10 +42,10 @@
         </div>
         <div class="header_list list-group d-none d-md-block" id="list-header">
             <ul>
-                <li class="header_list_item"><a href="#list-item-profile">PROFILE</a></li>
-                <li class="header_list_item"><a href="#list-item-career">CAREER</a></li>
-                <li class="header_list_item"><a href="#list-item-skill">SKILL</a></li>
-                <li class="header_list_item"><a href="#list-item-works">WORKS</a></li>
+                <li class="header_list_item" id="list_item_profile"><a href="#list-item-profile">PROFILE</a></li>
+                <li class="header_list_item" id="list_item_career"><a href="#list-item-career">CAREER</a></li>
+                <li class="header_list_item" id="list_item_skill"><a href="#list-item-skill">SKILL</a></li>
+                <li class="header_list_item" id="list_item_works"><a href="#list-item-works">WORKS</a></li>
             </ul>
         </div>
     </div>
@@ -290,16 +311,14 @@
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="label1">Modal title</h5>
+                                                <h5 class="modal-title" id="label1">RPAによる業務自動化</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                               </button>
                                             </div>
-                                            <div class="modal-body">
-                                                Modal body
-                                            </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">OK</button>
+                                            <div class="modal-body" style="height: 400px;">
+                                                <img src="image/work_rpa_image.png" class="card-img-top" alt="..." style="height:80%; width: 100%;">
+                                                <p>自動実行状態を監視するツールです。成果物の確認もできます</p>
                                             </div>
                                         </div>
                                     </div>
@@ -356,28 +375,28 @@
                     </div>
                     <div class="col">
                         <div class="card work_card">
-                            <img src="image/work_work.png" class="card-img-top" alt="..." style="width: 50%;">
+                            <img src="image/work_bot.png" class="card-img-top" alt="..." style="width: 50%;">
                             <div class="card-body">
-                                <h5 class="card-title">Bot</h5>
+                                <h5 class="card-title">チャットボット</h5>
                                 <p class="card-text">
                                     メモ的なものを記憶させておく私のパートナーです。<br> GAS/Google Chat
                                 </p>
                                 <!-- Modal Trigger -->
-                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal1">
+                                <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#modal2">
                                         Sample Image
                                     </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="label1" aria-hidden="true">
+                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="label2" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <h5 class="modal-title" id="label1">Modal title</h5>
+                                                <h5 class="modal-title" id="label2">チャットボット</h5>
                                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                 <span aria-hidden="true">&times;</span>
                                               </button>
                                             </div>
-                                            <div class="modal-body">
-                                                Modal body
+                                            <div class="modal-body" style="height: 300px">
+                                                <img src="image/work_bot_image.png" class="card-img-top" alt="..." style="height: 100%; width: 100%;">
                                             </div>
                                             <div class="modal-footer">
                                                 <button type="button" class="btn btn-primary">OK</button>
