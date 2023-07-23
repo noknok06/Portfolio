@@ -9,70 +9,41 @@
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <title>Naoki's Portfolio</title>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css">
     <!-- BootstrapのCSS読み込み -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <script>
-        $(function ($) {
-            $('.list_item_profile').on('click', function () {
-                const positionTop = $('#list-item-profile').offset().top - 20;
-                $("html").animate({ scrollTop: positionTop });
-            });
-            $('.list_item_career').on('click', function () {
-                const positionTop = $('#list-item-career').offset().top - 20;
-                $("html").animate({ scrollTop: positionTop });
-            });
-            $('.list_item_skill').on('click', function () {
-                const positionTop = $('#list-item-skill').offset().top - 20;
-                $("html").animate({ scrollTop: positionTop });
-            });
-            $('.list_item_works').on('click', function () {
-                const positionTop = $('#list-item-works').offset().top - 20;
-                $("html").animate({ scrollTop: positionTop });
-            });
-        });
-    </script>
+
+    <script src="./javascript.js"></script>
 </head>
 
 <body>
     <div class="header">
         <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
             <a href="#" class="navbar-brand">Naoki's Portfolio</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu1"
-                aria-controls="navmenu1" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu1" aria-controls="navmenu1" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navmenu1">
                 <div class="navbar-nav">
-                    <a class="nav-item nav-link list_item_profile" href="#list-item-profile">PROFILE</a>
-                    <a class="nav-item nav-link list_item_career" href="#list-item-career">CAREER</a>
-                    <a class="nav-item nav-link list_item_skill" href="#list-item-skill">SKILL</a>
-                    <a class="nav-item nav-link list_item_works" href="#list-item-works">WORKS</a>
+                    <a class="nav-item nav-link" href="#list-item-profile">PROFILE</a>
+                    <a class="nav-item nav-link" href="#list-item-career">CAREER</a>
+                    <a class="nav-item nav-link" href="#list-item-skill">SKILL</a>
+                    <a class="nav-item nav-link" href="#list-item-works">WORKS</a>
                 </div>
             </div>
         </nav>
-        <!-- <div class="header_title list-group d-none d-md-block">
-            <h5>Naoki's Portfolio</h5>
-        </div>
-        <div class="header_list list-group d-none d-md-block" id="list-header">
-            <ul>
-                <li class="header_list_item" id="list_item_profile"><a href="#list-item-profile">PROFILE</a></li>
-                <li class="header_list_item" id="list_item_career"><a href="#list-item-career">CAREER</a></li>
-                <li class="header_list_item" id="list_item_skill"><a href="#list-item-skill">SKILL</a></li>
-                <li class="header_list_item" id="list_item_works"><a href="#list-item-works">WORKS</a></li>
-            </ul>
-        </div> -->
     </div>
     <div class="image_wrapper d-none d-md-block">
-        <img src="image/header_image.jpg" alt="image">
+        <img id="header_image" src="image/header_image.jpg" alt="image">
         <p>Naoki's Portfolio</p>
+        <a href="https://github.com/Naoki0618"><i class="fa-brands fa-github github_icon"></i></a>
     </div>
 
     <div class="main col-xs-12 col-md-12 col-lg-12">
-        <div data-bs-spy="scroll" data-bs-target="#list-header" data-bs-offset="0" class="scrollspy-example"
-            tabindex="0">
+        <div data-bs-spy="scroll" data-bs-target="#list-header" data-bs-offset="0" class="scrollspy-example" tabindex="0">
             <div class="profile">
                 <p class="profile_title" id="list-item-profile">PROFILE</p>
                 <div class="profile_contents">
@@ -83,7 +54,6 @@
                         プログラムを組むことも好きですが、最近では現場の意見を聞きながら
                         業務改善することにやりがいを感じています。
                         新しい仕組みで便利になっていくのって楽しいですね！
-                        GitHub <a href="https://github.com/Naoki0618">@Naoki0618</a>
                     </pre>
                 </div>
             </div>
@@ -352,8 +322,7 @@
                     </div>
                     <div class="col">
                         <div class="card work_card">
-                            <img src="image/work_web.png" id="image_web" class="card-img-top" alt="..."
-                                style="width: 80%;">
+                            <img src="image/work_web.png" id="image_web" class="card-img-top" alt="..." style="width: 80%;">
                             <div class="card-body">
                                 <h5 class="card-title2">WEBアプリ</h5>
                                 <p class="card-text">
@@ -367,19 +336,16 @@
                                     <div class="tag col">Firebase</div>
                                 </div>
                                 <!-- Modal Trigger -->
-                                <button class="sample_button" type="button" class="btn sample_button"
-                                    data-toggle="modal" data-target="#modal2">
+                                <button class="sample_button" type="button" class="btn sample_button" data-toggle="modal" data-target="#modal2">
                                     Sample
                                 </button>
 
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="label2"
-                                    aria-hidden="true">
+                                <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="label2" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
@@ -388,14 +354,11 @@
                                                     <div class="card mb-3">
                                                         <div class="row g-0">
                                                             <div class="col-md-5 work_card">
-                                                                <img src="image/work_web_sample1.png" id="image_web" alt="..."
-                                                                    style="padding: 0;">
+                                                                <img src="image/work_web_sample1.png" id="image_web" alt="..." style="padding: 0;">
                                                             </div>
                                                             <div class="col-md-7">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title"><a
-                                                                            href="https://naoki0618.pythonanywhere.com/myapp/"
-                                                                            target="_blank" class="btn-sticky">QAサイト</a>
+                                                                    <h5 class="card-title"><a href="https://naoki0618.pythonanywhere.com/myapp/" target="_blank" class="btn-sticky">QAサイト</a>
                                                                     </h5>
                                                                     <p class="card-text">社内の質問事項を蓄え、必要に応じて検索できるシステムです。
                                                                     </p>
@@ -406,15 +369,11 @@
                                                     <div class="card mb-3">
                                                         <div class=" row g-0">
                                                             <div class="col-md-5">
-                                                                <img src="image/work_web.png" id="image_web" alt="..."
-                                                                    style="padding: 0;">
+                                                                <img src="image/work_web.png" id="image_web" alt="..." style="padding: 0;">
                                                             </div>
                                                             <div class="col-md-7">
                                                                 <div class="card-body">
-                                                                    <h5 class="card-title"><a
-                                                                            href="https://script.google.com/macros/s/AKfycbwWy7Iynzb_gMSLQPv2mv9PGdwexz6xH-NYf0sKCrfl8DkRNuZcyyDT343ikA5Lwihi/exec"
-                                                                            target="_blank"
-                                                                            class="btn-sticky">ワークショップ</a></h5>
+                                                                    <h5 class="card-title"><a href="https://script.google.com/macros/s/AKfycbwWy7Iynzb_gMSLQPv2mv9PGdwexz6xH-NYf0sKCrfl8DkRNuZcyyDT343ikA5Lwihi/exec" target="_blank" class="btn-sticky">ワークショップ</a></h5>
                                                                     <p class="card-text">社員間のコミュニケーションをとるためのプラットフォームです。
                                                                     </p>
                                                                     <p class="card-text"><small class="text-muted">
@@ -466,25 +425,21 @@
                                     <div class="tag col">Google Chat</div>
                                 </div>
                                 <!-- Modal Trigger -->
-                                <button class="sample_button" type="button" class="btn sample_button"
-                                    data-toggle="modal" data-target="#modal3">
+                                <button class="sample_button" type="button" class="btn sample_button" data-toggle="modal" data-target="#modal3">
                                     Sample
                                 </button>
                                 <!-- Modal -->
-                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="label2"
-                                    aria-hidden="true">
+                                <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="label2" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
                                             <div class="modal-header">
                                                 <h5 class="modal-title" id="label2">チャットボット</h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                    aria-label="Close">
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                     <span aria-hidden="true">&times;</span>
                                                 </button>
                                             </div>
                                             <div class="modal-body" style="height: 300px">
-                                                <img src="image/work_bot_image.png" class="card-img-top" alt="..."
-                                                    style="height: 100%; width: 100%;">
+                                                <img src="image/work_bot_image.png" class="card-img-top" alt="..." style="height: 100%; width: 100%;">
                                             </div>
                                         </div>
                                     </div>
@@ -505,18 +460,22 @@
         </div>
 
 
+        <div class="collapse navbar-collapse" id="navmenu1">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#list-item-profile">PROFILE</a>
+                <a class="nav-item nav-link" href="#list-item-career">CAREER</a>
+                <a class="nav-item nav-link" href="#list-item-skill">SKILL</a>
+                <a class="nav-item nav-link" href="#list-item-works">WORKS</a>
+            </div>
+        </div>
+
         <!-- jQuery読み込み -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
         <!-- Propper.js読み込み -->
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
         <!-- BootstrapのJavascript読み込み -->
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 </body>
 
 </html>
