@@ -12,16 +12,12 @@ $(function($) {
     $('.navbar-nav a').click(moveLabel);
     $('.footer-menu li a').click(moveLabel);
 
-    $('.github_icon').hover(
+    $('.github_icon i').hover(
         function() {
-            $(this).animate({
-                'font-size': '70px'
-            }, 300);
+            $(this).css('color', 'gray');
         },
         function() {
-            $(this).animate({
-                'font-size': '50px'
-            }, 300);
+            $(this).css('color', 'white');
         }
     );
 });

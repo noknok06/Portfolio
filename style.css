@@ -93,7 +93,8 @@ table {
 }
 
 .github_icon {
-    font-size: 50px;
+    font-size: 30px;
+    margin: 0 0 0 auto;
 }
 
 .github_label {
