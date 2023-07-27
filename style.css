@@ -228,6 +228,28 @@ ul.footer-menu li a {
     color: white;
 }
 
+.timeline-header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+}
+
+.timeline-header h3 {
+    /* float: left; */
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content span {
+    font-size: 35px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.timeline-content p {
+    display: none;
+}
+
 
 /* for Desktop */
 
@@ -238,9 +260,10 @@ ul.footer-menu li a {
         position: relative;
     }
     .timeline-date {
+        padding-top: 14px;
         width: 110px;
         float: left;
-        margin-top: 20px;
+        margin: 0;
     }
     .timeline-content {
         width: 75%;
@@ -255,7 +278,7 @@ ul.footer-menu li a {
         background: #d99d36;
         position: absolute;
         left: 106px;
-        top: 24px;
+        top: 20px;
         border-radius: 100%;
     }
 }
