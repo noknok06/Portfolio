@@ -29,7 +29,7 @@ $(function($) {
         if (is_open == '+') {
             $select.find('p').slideDown();
             $select.find('.timeline-header span').text("-");
-        } else {
+        } else if (is_open == '-') {
             $select.find('p').slideUp();
             $select.find('.timeline-header span').text("+");
         }

@@ -232,6 +232,9 @@ ul.footer-menu li a {
     align-items: baseline;
     display: flex;
     justify-content: space-between;
+    border-bottom-width: initial;
+    border-bottom-style: solid;
+    border-bottom-color: initial
 }
 
 .timeline-header h3 {
