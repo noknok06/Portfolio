@@ -1,4 +1,13 @@
+/*
+GENERAL STYLING
+================================================ */
 * {
+    font-family: "Helvetica Neue",
+      Arial,
+      "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans",
+      Meiryo,
+      sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -24,7 +33,9 @@ table {
 }
 
 
-/* 1index.html */
+/*
+index
+================================================ */
 
 .header {
     height: 80px;
@@ -37,11 +48,6 @@ table {
     z-index: 1;
 }
 
-.header_title {
-    float: left;
-    padding: 20px 40px;
-    margin-left: 20px;
-}
 
 .header_list {
     display: inline-block;
@@ -62,9 +68,9 @@ table {
 }
 
 #header_image {
-    height: 750px;
+    height: 100vh;
     width: 100vw;
-    /* filter: opacity(0.7); */
+    background-size: cover;
 }
 
 .image_wrapper p {
@@ -101,69 +107,46 @@ table {
     padding-left: 10px;
 }
 
-.main {
+.containar {
     margin-top: 24px;
     padding: 0 50px;
 }
 
-.work_card img {
-    margin: 5px auto;
-    height: 120px;
-}
-
-@media (max-width: 600px) {
-    #image_fm {
-        width: 50%;
-    }
-}
-
-@media (min-width: 600px) {
-    .profile,
-    .skill,
-    .career {
-        justify-content: center;
-        margin: 50px auto;
-        width: 70%;
-    }
-    .work_card img {
-        width: 40%;
-    }
-    #image_web {
-        width: 120%;
-    }
-}
-
-.works {
+.menus {
     justify-content: center;
     margin: 50px auto;
     width: 90%;
 }
 
-.profile_title,
-.skill_title,
-.works_title,
-.career_title {
+.menus_card img {
+    margin: 5px auto;
+    height: 120px;
+}
+
+.menus_title {
     padding: 30px 0px;
     margin: 0px;
     text-align: center;
     font-size: 50px;
 }
 
-.profile_contents {
+.menus_contents {
     padding-bottom: 50px;
     display: flex;
-    font-family: arial;
+    /* font-family: arial; */
     font-size: 20px;
     justify-content: center;
     height: 250px;
 }
 
-.profile_image {
+.menus_image {
     float: left;
     padding-right: 80px;
 }
 
-.profile_explain {
+.menus_explain {
+    display:inline-block;
+    /* font-family: serif; */
     padding: 0;
     white-space: pre-line;
     /* width: 80vw; */
@@ -183,6 +166,8 @@ table {
 }
 
 .card-title {
+
+    /* font-family: serif; */
     font-size: 18px;
     /* font-weight: bold; */
 }
@@ -192,7 +177,9 @@ table {
 }
 
 
-/* 経歴 */
+/*
+経歴
+================================================ */
 
 .timeline {
     list-style: none;
@@ -204,7 +191,9 @@ table {
 }
 
 
-/* footer */
+/*
+footer
+================================================ */
 
 .footer {
     width: 100%;
@@ -251,39 +240,6 @@ ul.footer-menu li a {
 
 .timeline-content p {
     display: none;
-}
-
-
-/* for Desktop */
-
-@media (min-width: 640px) {
-    .timeline>li {
-        overflow: hidden;
-        margin: 0;
-        position: relative;
-    }
-    .timeline-date {
-        padding-top: 14px;
-        width: 110px;
-        float: left;
-        margin: 0;
-    }
-    .timeline-content {
-        width: 75%;
-        float: left;
-        border-left: 3px #4f4f3c solid;
-        padding-left: 30px;
-    }
-    .timeline-content:before {
-        content: '';
-        width: 12px;
-        height: 12px;
-        background: #d99d36;
-        position: absolute;
-        left: 106px;
-        top: 20px;
-        border-radius: 100%;
-    }
 }
 
 .tag {
@@ -343,6 +299,7 @@ ul.footer-menu li a {
 }
 
 .card-title2 {
+    /* font-family: 'Noto Sans JP', sans-serif; */
     border-bottom: solid 3px #cce4ff;
     position: relative;
     margin-bottom: 15px;
@@ -355,4 +312,69 @@ ul.footer-menu li a {
     border-bottom: solid 3px #5472cd;
     bottom: -3px;
     width: 20%;
+}
+
+
+/* for Mobile */
+
+@media (max-width: 600px) {
+    #image_fm {
+        width: 50%;
+    }
+
+    .timeline-header h3 {
+        font-size: 120%;
+    }
+}
+
+/* for Desktop */
+
+@media (min-width: 600px) {
+
+    .menus {
+        justify-content: center;
+        margin: 50px auto;
+        width: 70%;
+    }
+
+    .menus img {
+        width: 40%;
+    }
+
+    #image_web {
+        width: 120%;
+    }
+}
+
+@media (min-width: 640px) {
+    .timeline>li {
+        overflow: hidden;
+        margin: 0;
+        position: relative;
+    }
+
+    .timeline-date {
+        padding-top: 14px;
+        width: 110px;
+        float: left;
+        margin: 0;
+    }
+
+    .timeline-content {
+        width: 75%;
+        float: left;
+        border-left: 3px #4f4f3c solid;
+        padding-left: 30px;
+    }
+
+    .timeline-content:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        background: #d99d36;
+        position: absolute;
+        left: 106px;
+        top: 20px;
+        border-radius: 100%;
+    }
 }
