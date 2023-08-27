@@ -12,10 +12,6 @@ GENERAL STYLING
     padding: 0;
 }
 
-pre {
-    color: rgb(184, 133, 133);
-}
-
 img {
     object-fit: fill;
 }
@@ -32,6 +28,55 @@ table {
     word-wrap: break-all;
 }
 
+td{
+    font-size: 1.1rem;
+}
+
+.containar {
+    margin-top: 24px;
+    padding: 0 50px;
+}
+
+.menus {
+    justify-content: center;
+    margin: 50px auto;
+    width: 90%;
+}
+
+.menus>p {
+    padding: 30px 0px;
+    margin: 0px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.menus_card img {
+    margin: 5px auto;
+    height: 120px;
+}
+
+.menus_contents {
+    padding-bottom: 50px;
+    display: flex;
+    /* font-family: arial; */
+    font-size: 20px;
+    justify-content: center;
+    height: 250px;
+}
+
+.menus_image {
+    float: left;
+    padding-right: 80px;
+    height: auto;
+}
+
+.menus_explain {
+    display: inline-block;
+    /* font-family: serif; */
+    padding: 0;
+    white-space: pre-line;
+    /* width: 80vw; */
+}
 
 /*
 ヘッダー
@@ -108,52 +153,6 @@ table {
     top: 650px;
 }
 
-.containar {
-    margin-top: 24px;
-    padding: 0 50px;
-}
-
-.menus {
-    justify-content: center;
-    margin: 50px auto;
-    width: 90%;
-}
-
-.menus>p {
-    padding: 30px 0px;
-    margin: 0px;
-    text-align: center;
-    font-size: 50px;
-}
-
-.menus_card img {
-    margin: 5px auto;
-    height: 120px;
-}
-
-.menus_contents {
-    padding-bottom: 50px;
-    display: flex;
-    /* font-family: arial; */
-    font-size: 20px;
-    justify-content: center;
-    height: 250px;
-}
-
-.menus_image {
-    float: left;
-    padding-right: 80px;
-    height: auto;
-}
-
-.menus_explain {
-    display: inline-block;
-    /* font-family: serif; */
-    padding: 0;
-    white-space: pre-line;
-    /* width: 80vw; */
-}
-
 .card {
     text-align: center;
     margin: 0;
@@ -174,13 +173,20 @@ table {
     /* font-weight: bold; */
 }
 
-.card-body p {
+.card-body {
     font-size: 13px;
 }
 
+.card-body p {
+    font-size: 1rem;
+}
 
 /*
-経歴
+PROFILE
+================================================ */
+
+/*
+CAREER
 ================================================ */
 
 .timeline {
@@ -326,6 +332,10 @@ ul.footer-menu li a {
 
     .timeline-header h3 {
         font-size: 120%;
+    }
+    
+    blockquote>p{
+        font-size: 1rem;
     }
 }
 
