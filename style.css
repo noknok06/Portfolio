@@ -3,11 +3,11 @@ GENERAL STYLING
 ================================================ */
 * {
     font-family: "Helvetica Neue",
-      Arial,
-      "Hiragino Kaku Gothic ProN",
-      "Hiragino Sans",
-      Meiryo,
-      sans-serif;
+        Arial,
+        "Hiragino Kaku Gothic ProN",
+        "Hiragino Sans",
+        Meiryo,
+        sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -34,7 +34,7 @@ table {
 
 
 /*
-index
+ヘッダー
 ================================================ */
 
 .header {
@@ -63,14 +63,28 @@ index
     padding-left: 20px;
 }
 
-.image_wrapper {
-    position: relative;
+.github {
+    display: flex
 }
+
+.github_icon {
+    font-size: 30px;
+    margin: 0 0 0 auto;
+}
+
+.github_label {
+    padding-left: 10px;
+}
+
 
 #header_image {
     height: 100vh;
     width: 100vw;
     background-size: cover;
+}
+
+.image_wrapper {
+    position: relative;
 }
 
 .image_wrapper p {
@@ -94,19 +108,6 @@ index
     top: 650px;
 }
 
-.github {
-    display: flex
-}
-
-.github_icon {
-    font-size: 30px;
-    margin: 0 0 0 auto;
-}
-
-.github_label {
-    padding-left: 10px;
-}
-
 .containar {
     margin-top: 24px;
     padding: 0 50px;
@@ -118,16 +119,16 @@ index
     width: 90%;
 }
 
-.menus_card img {
-    margin: 5px auto;
-    height: 120px;
-}
-
-.menus_title {
+.menus>p {
     padding: 30px 0px;
     margin: 0px;
     text-align: center;
     font-size: 50px;
+}
+
+.menus_card img {
+    margin: 5px auto;
+    height: 120px;
 }
 
 .menus_contents {
@@ -142,10 +143,11 @@ index
 .menus_image {
     float: left;
     padding-right: 80px;
+    height: auto;
 }
 
 .menus_explain {
-    display:inline-block;
+    display: inline-block;
     /* font-family: serif; */
     padding: 0;
     white-space: pre-line;
@@ -338,7 +340,7 @@ ul.footer-menu li a {
     }
 
     .menus img {
-        width: 40%;
+        width: auto;
     }
 
     #image_web {
