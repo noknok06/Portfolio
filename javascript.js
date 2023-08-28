@@ -10,7 +10,7 @@ $(function($) {
     }
 
     $('.navbar-nav a').click(moveLabel);
-    $('.footer-menu li a').click(moveLabel);
+    $('footer a').click(moveLabel);
 
     $('.github_icon i').hover(
         function() {

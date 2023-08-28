@@ -47,19 +47,19 @@
             </div>
         </nav>
     </div>
-    <div class="image_wrapper d-none d-md-block">
+    <div class="image_wrapper d-none d-lg-block">
         <img id="header_image" src="image/header_image.jpg" alt="image">
         <p id="header_title">Naoki's Portfolio</p>
         <!-- <a href="https://github.com/Naoki0618"><i class="fa-brands fa-github github_icon"></i></a> -->
     </div>
 
-    <div class="containar col-xs-12 col-md-12 col-lg-12">
-        <div data-bs-spy="scroll" data-bs-target="#list-header" data-bs-offset="0" class="scrollspy-example"
+    <div class="containar">
+        <main data-bs-spy="scroll" data-bs-target="#list-header" data-bs-offset="0" class="scrollspy-example"
             tabindex="0">
             <div class="menus">
-                <p id="list-item-profile">PROFILE</p>
+                <p id="list-item-profile"><i class="fa-solid fa-user"></i>PROFILE</p>
                 <div class="menus_contents">
-                    <img class="menus_image d-none d-md-block" src="image/profile_image.png">
+                    <img class="menus_image d-none d-lg-block" src="image/profile_image.png">
                     <blockquote>
                         <p>
                             初めまして。naokiと申します。現在32歳です。
@@ -72,7 +72,7 @@
                 </div>
             </div>
             <div class="menus">
-                <p id="list-item-career">CAREER</p>
+                <p id="list-item-career"><i class="fa-solid fa-briefcase"></i>CAREER</p>
                 <ul class="timeline">
                     <li>
                         <p class="timeline-date">2014年4月</p>
@@ -91,7 +91,7 @@
                         <p class="timeline-date">2017年9月</p>
                         <div class="timeline-content">
                             <div class="timeline-header">
-                                <h3>食品業専門商社の社内SEに転職(300人規模)</h3>
+                                <h3>中小専門商社に転職</h3>
                                 <span>+</span>
                             </div>
                             <p>基幹システムの刷新を経験。ローコードツールの開発手法を取得</p>
@@ -99,17 +99,27 @@
                             <p>Saas系アプリケーションの運用・保守</p>
                         </div>
                     </li>
+                    <li>
+                        <p class="timeline-date">2023年9月</p>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>大手専門商社に転職</h3>
+                                <span>　</span>
+                            </div>
+                            <p></p>
+                        </div>
+                    </li>
                 </ul>
             </div>
             <div class="menus">
-                <p id="list-item-skill">SKILL</p>
+                <p id="list-item-skill"><i class="fa-solid fa-kitchen-set"></i>SKILL</p>
                 <div class="menus_cards">
                     <div class="row row-cols-1 row-cols-md-2 g-4">
                         <div class="col">
                             <div class="card menus_card">
                                 <div class="card-header" style="background-color: darkcyan">フロントエンド</div>
                                 <div class="card-body">
-                                    <h5 class="card-title">静的な部分は一通りできます。</h5>
+                                    <p class="card-title">静的な部分は一通りできます。</p>
                                     <table class="card-text table">
                                         <thead>
                                             <tr>
@@ -292,10 +302,10 @@
             </div>
 
             <div class="menus">
-                <p id="list-item-works">WORKS</p>
+                <p id="list-item-works"><i class="fa-brands fa-creative-commons-nd"></i>WORKS</p>
                 <div class="menus_cards">
 
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="row row-cols-1 row-cols-md- row-cols-lg-3 g-4">
                         <div class="col">
                             <div class="card menus_card">
                                 <img src="image/work_robot.jpeg" class="card-img-top" alt="..." style="width:
@@ -346,7 +356,7 @@
                                         <div class="tag col">Firebase</div>
                                     </div>
                                     <!-- Modal Trigger -->
-                                    <button class="sample_button" type="button" class="btn sample_button"
+                                    <button class="sample_button" type="button"
                                         data-toggle="modal" data-target="#modal2">
                                         Sample
                                     </button>
@@ -448,7 +458,7 @@
                                         <div class="tag col">Google Chat</div>
                                     </div>
                                     <!-- Modal Trigger -->
-                                    <button class="sample_button" type="button" class="btn sample_button"
+                                    <button class="sample_button" type="button"
                                         data-toggle="modal" data-target="#modal3">
                                         Sample
                                     </button>
@@ -477,28 +487,31 @@
                     </div>
                 </div>
             </div>
-            <div class="footer">
-                <ul class="footer-menu">
-                    <li><a class="list_item_profile" href="#list-item-profile">PROFILE</a> ｜</li>
-                    <li><a class="list_item_career" href="#list-item-career">CAREER</a> ｜</li>
-                    <li><a class="list_item_skill" href="#list-item-skill">SKILL</a> ｜</li>
-                    <li><a class="list_item_works" href="#list-item-works">WORKS</a> </li>
-                </ul>
-            </div>
+        </main>
+        <footer>
+            <ul>
+                <li><a class="list_item_profile" href="#list-item-profile">PROFILE</a></li>
+                <li><a class="list_item_career" href="#list-item-career">CAREER</a></li>
+                <li><a class="list_item_skill" href="#list-item-skill">SKILL</a></li>
+                <li><a class="list_item_works" href="#list-item-works">WORKS</a></li>
+            </ul>
+            <p><small>&copy;2023 Naoki's Portfolio</small></p>
+        </footer>
+    </div>
 
-            <!-- jQuery読み込み -->
-            <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-                integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-                crossorigin="anonymous"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
-            <!-- Propper.js読み込み -->
-            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-                integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-                crossorigin="anonymous"></script>
-            <!-- BootstrapのJavascript読み込み -->
-            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-                integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-                crossorigin="anonymous"></script>
+    <!-- jQuery読み込み -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.js"></script>
+    <!-- Propper.js読み込み -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <!-- BootstrapのJavascript読み込み -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
