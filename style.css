@@ -1,6 +1,27 @@
 /*
+COLORS
+================================================ */
+:root {
+    --light-blue: #4db1ec;
+    --blue: #1665cc;
+    --dark-blue:rgb(30, 60, 99);
+    --purple: #b473bf;
+    --pink: #ffb2c1;
+    --orange: #ff9f67;
+    --yellow: #ffd673;
+    --light-green: #a2e29b;
+    --green: #00a2af;
+    --grey: #333;
+    --white: #fff;
+}
+
+/*
 GENERAL STYLING
 ================================================ */
+.font-color-white {
+    color: #f1eaeb;
+}
+
 * {
     font-family: "Helvetica Neue",
         Arial,
@@ -12,10 +33,10 @@ GENERAL STYLING
     padding: 0;
 }
 
-i{
+i {
     padding: 10px;
     margin: 5px;
-    background-color:darkgrey;
+    background-color: darkgrey;
     color: white;
     font-size: 1.7rem;
     vertical-align: text-bottom;
@@ -37,7 +58,7 @@ table {
     word-wrap: break-all;
 }
 
-td{
+td {
     font-size: 1.1rem;
 }
 
@@ -65,12 +86,13 @@ td{
 }
 
 .menus_contents {
-    padding-bottom: 50px;
+    /* padding-bottom: 50px; */
+    margin: 0;
     display: flex;
     /* font-family: arial; */
     font-size: 20px;
     justify-content: center;
-    height: 250px;
+    /* height: 250px; */
 }
 
 .menus_image {
@@ -87,13 +109,18 @@ td{
     /* width: 80vw; */
 }
 
+#carrer {
+    background-image: linear-gradient(45deg, var(--dark-blue), var(--grey));
+    padding: 2rem 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 90%, 0 100%);
+}
+
 /*
 ヘッダー
 ================================================ */
 
-.header {
+/* .header {
     height: 80px;
-    /* background-color: #174a5c; */
     color: rgb(58, 56, 56);
     position: fixed;
     top: 0px;
@@ -114,8 +141,11 @@ td{
 .header_list_item {
     display: inline;
     padding-left: 20px;
-}
+} */
 
+/*
+HEADER
+================================================ */
 .github {
     display: flex
 }
@@ -124,7 +154,8 @@ td{
     font-size: 30px;
     margin: 0 0 0 auto;
 }
-.github_icon>i{
+
+.github_icon>i {
     color: white;
     background-color: initial;
 }
@@ -142,6 +173,7 @@ td{
 
 .image_wrapper {
     position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 .image_wrapper p {
@@ -203,6 +235,10 @@ PROFILE
 CAREER
 ================================================ */
 
+.carrer {
+    background-image: url('./image/blue.png')
+}
+
 .timeline {
     list-style: none;
     padding: 0px;
@@ -212,6 +248,30 @@ CAREER
     margin-bottom: 60px;
 }
 
+.timeline-header {
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+    border-bottom-width: initial;
+    border-bottom-style: groove;
+    border-bottom-color: initial
+}
+
+.timeline-header h3 {
+    /* float: left; */
+    padding: 0;
+    margin: 0;
+}
+
+.timeline-content span {
+    font-size: 35px;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.timeline-content p {
+    display: none;
+}
 
 /*
 footer
@@ -238,38 +298,13 @@ footer a {
     color: white;
 }
 
-footer a:hover{
+footer a:hover {
     color: #c7c3ba;
 }
 
-footer small{
+footer small {
     color: #c7c3ba;
     font-size: .875rem;
-}
-
-.timeline-header {
-    align-items: baseline;
-    display: flex;
-    justify-content: space-between;
-    border-bottom-width: initial;
-    border-bottom-style: solid;
-    border-bottom-color: initial
-}
-
-.timeline-header h3 {
-    /* float: left; */
-    padding: 0;
-    margin: 0;
-}
-
-.timeline-content span {
-    font-size: 35px;
-    padding: 0 10px;
-    cursor: pointer;
-}
-
-.timeline-content p {
-    display: none;
 }
 
 .tag {
@@ -280,7 +315,7 @@ footer small{
     border-radius: 5px;
     /* font-weight: bold; */
     color: #FFF;
-    background-image: linear-gradient(45deg, darkcyan 0%, rgb(158, 198, 198) 100%);
+    background-image: linear-gradient(45deg, rgb(102, 109, 122) 0%, rgb(13, 13, 34) 100%);
     transition: .4s;
 }
 
@@ -293,14 +328,14 @@ footer small{
     position: relative;
 }
 
-.sample_button {
+.sample-button {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 0.25em 0.5em;
     text-decoration: none;
     color: #FFF;
-    background: darkcyan;
+    background: rgb(123, 123, 155);
     /*色*/
     border: solid 1px #75c4e9;
     /*線色*/
@@ -344,6 +379,9 @@ footer small{
     width: 20%;
 }
 
+.transition-1s {
+    transition: color .5s;
+}
 
 /* for Mobile */
 
@@ -355,8 +393,8 @@ footer small{
     .timeline-header h3 {
         font-size: 120%;
     }
-    
-    blockquote>p{
+
+    blockquote>p {
         font-size: 1rem;
     }
 }
@@ -388,7 +426,10 @@ footer small{
     }
 
     .timeline-date {
-        padding-top: 14px;
+        display: block;
+        /* padding-top: 14px; */
+        padding: 1.5rem 0 0 0;
+        height: auto;
         width: 110px;
         float: left;
         margin: 0;
@@ -397,18 +438,35 @@ footer small{
     .timeline-content {
         width: 75%;
         float: left;
-        border-left: 3px #4f4f3c solid;
         padding-left: 30px;
+        border-left: 3px #e5dece solid;
     }
 
     .timeline-content:before {
         content: '';
-        width: 12px;
-        height: 12px;
-        background: #d99d36;
+        width: 2.25rem;
+        height: 2.25rem;
+        background: white;
+        text-align: center;
+        padding: .1rem;
         position: absolute;
-        left: 106px;
-        top: 20px;
-        border-radius: 100%;
+        top: 1rem;
+        left: 5.8rem;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        color: gray;
+        font-size: 1.25rem;
+    }
+
+    .icon-carrer1::before {
+        content: '\f06d';
+    }
+
+    .icon-carrer2::before {
+        content: '\f810';
+    }
+
+    .icon-carrer3::before {
+        content: '\f1ad';
     }
 }
