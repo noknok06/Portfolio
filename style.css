@@ -386,6 +386,17 @@ footer small {
 /* for Mobile */
 
 @media (max-width: 600px) {
+
+    .navbar-nav{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .fa-github{
+        display: block;
+        text-align: center;
+    }
+
     #image_fm {
         width: 50%;
     }
