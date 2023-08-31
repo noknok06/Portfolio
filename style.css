@@ -167,8 +167,8 @@ HEADER
 .header{
     position: fixed;
     top: 0;
-    width: 100%;
-    z-index: 1;
+    width:100%;    
+    z-index: 2;
 }
 
 #header_image {
@@ -279,6 +279,17 @@ CAREER
     display: none;
 }
 
+/*
+WORK
+================================================ */
+#work {
+    background-image: linear-gradient(45deg, var(--dark-blue), var(--grey));
+    padding: 2rem 0;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+#work p:nth-child(1){
+    color: white;
+}
 /*
 footer
 ================================================ */
@@ -413,6 +424,9 @@ footer small {
 
     blockquote>p {
         font-size: 1rem;
+    }
+    #work{
+        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
     }
 }
 
