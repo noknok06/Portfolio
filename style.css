@@ -164,6 +164,12 @@ HEADER
     padding-left: 10px;
 }
 
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
 
 #header_image {
     height: 100vh;
