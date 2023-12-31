@@ -295,7 +295,7 @@ footer
 ================================================ */
 
 footer {
-    background: #949087;
+    background: currentColor;
     text-align: center;
     padding: 1rem;
 }
